@@ -31,7 +31,7 @@ services:
   # Wordpress
   wordpress:
     depends_on:
-      - db
+      - phpmyadmin
     image: wordpress:latest
     ports:
       - '8000:80'
