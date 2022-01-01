@@ -29,6 +29,7 @@ services:
       MAX_EXECUTION_TIME: 300
       POST_MAX_SIZE: 50M
       UPLOAD_MAX_FILESIZE: 50M
+      UPLOAD_LIMIT: 30M
     networks:
       - wpsite
   # Wordpress
