@@ -25,11 +25,7 @@ services:
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: password 
-      MAX_INPUT_VARS: 1500
-      MAX_EXECUTION_TIME: 300
-      POST_MAX_SIZE: 50M
-      UPLOAD_MAX_FILESIZE: 50M
-      UPLOAD_LIMIT: 30M
+      - UPLOAD_LIMIT=50M
     networks:
       - wpsite
   # Wordpress
