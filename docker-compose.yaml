@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3'
 
 services:
   # Database
@@ -25,7 +25,7 @@ services:
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: password 
-      - 'UPLOAD_LIMIT=50M'
+      UPLOAD_LIMIT: 50M
     networks:
       - wpsite
   # Wordpress
